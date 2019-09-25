@@ -27,6 +27,7 @@ pub fn convert(s: String, num_rows: i32) -> String {
 }
 
 pub fn convert_v2(s: String, num_rows: i32) -> String {
+    // [(0, 'P'), (1, 'A'), (2, 'Y'), (3, 'P'), (2, 'A'), (1, 'L'), (0, 'I'), (1, 'S'), (2, 'H'), (3, 'I'), (2, 'R'), (1, 'I'), (0, 'N'), (1, 'G')]
     let mut chars: Vec<_> = (0..num_rows)
         .chain((1..num_rows - 1).rev())
         .cycle()
